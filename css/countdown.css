@@ -1,0 +1,48 @@
+/***************************************************
+* Stylesheet: Part of the jCounter jQuery plugin
+* Official page: http://devingredients.com/jcounter
+* Author: Catalin Berta 
+* Note: To resize the counter, you can do so by only changing the main font-size. Default is 16px;
+***************************************************/
+ul.jCounterDefault {
+	height: 5.2em;
+	margin: 0;
+	font-size: 16px; /* change to resize counter */
+	padding: 0;
+}
+ul.jCounterDefault * {
+	margin: 0;
+	padding: 0;
+}
+ul.jCounterDefault li {
+	background-color: #333;
+	border: 0.16em solid #fff;
+	color: #fff;
+	display: inline;
+	float: left;
+	list-style-type: none;
+	margin-left: 0.2em;
+	min-width: 4.3em;
+	position: relative;
+	text-align: center;
+	border-radius: 0.5em;
+	-moz-box-shadow: 0 0 0.2em #777;
+	-ms-box-shadow: 0 0 0.2em #777;
+	-o-box-shadow: 0 0 0.2em #777;
+	-webkit-box-shadow: 0 0 0.2em #777;
+	box-shadow: 0 0 0.2em #777;
+}
+ul.jCounterDefault span {
+	display: block;
+	font: normal bold 300% times;
+	letter-spacing: 0.08em;
+	margin-left: 0.06em;
+	padding: 0 0.1em;
+}
+ul.jCounterDefault  em.textDays, ul.jCounterDefault  em.textHours, ul.jCounterDefault  em.textMinutes, ul.jCounterDefault  em.textSeconds{
+	display: block;
+	font: normal normal 80% "Trebuchet MS";
+	letter-spacing: 0;
+	margin: 0 auto;
+	padding-bottom: 0.4em;
+}

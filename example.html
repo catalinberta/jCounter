@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jCounter - jQuery plugin - devingredients.com</title>
+	<meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1">
+	<link rel="stylesheet" type="text/css" href="css/countdown.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.jCounter-0.1.0.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			//first counter
+			$(".countdown1").jCounter({
+				date: "01 january 2013 12:00:00", //format: DD month YYYY HH:MM:SS
+				timezone: "Europe/Bucharest",
+				format: "dd:hh:mm:ss",
+				twoDigits: 'on',
+				fallback: function() { console.log("Counter 1 finished!") }
+			});
+			
+			$('.pause1').click(function() {
+				$(".countdown1").jCounter('pause');
+			});
+			$('.stop1').click(function() {
+				$(".countdown1").jCounter('stop');
+			});
+			$('.start1').click(function() {
+				$(".countdown1").jCounter('start');
+			});
+			
+			//second counter
+			$(".countdown3").jCounter({
+				format: "ss",
+				twoDigits: 'on',
+				customDuration: 60*9, //9 minutes
+				fallback: function() { console.log("Counter 2 finished! ") }
+			});
+			
+			$('.pause3').click(function() {
+				$(".countdown3").jCounter('pause');
+			});
+			$('.stop3').click(function() {
+				$(".countdown3").jCounter('stop');
+			});
+			$('.reset3').click(function() {
+				$(".countdown3").jCounter('reset');
+			});
+			$('.start3').click(function() {
+				$(".countdown3").jCounter('start');
+			});
+			
+			//third counter
+			$(".countdown2").jCounter({
+				format: "dd:hh:mm:ss",
+				twoDigits: 'on',
+				customRange: '10:9999',
+				fallback: function() { console.log("Counter 3 finished!") }
+			});
+			
+			$('.pause2').click(function() {
+				$(".countdown2").jCounter('pause');
+			});
+			$('.stop2').click(function() {
+				$(".countdown2").jCounter('stop');
+			});
+			$('.reset2').click(function() {
+				$(".countdown2").jCounter('reset');
+			});
+			$('.start2').click(function() {
+				$(".countdown2").jCounter('start');
+			});
+		});
+	</script>
+</head>
+<body>
+	<h3>Visit the official page of <a href="http://devingredients.com/jcounter" title="">jCounter Plugin</a> for info and documentation</h3><br>
+	<h2>Date-based countdown</h2>
+	<ul class="jCounterDefault countdown1">
+		<li>
+			<p><span class="days">00</span></p>
+			<p><em class="textDays">Days</em></p>
+		</li>
+		<li>
+			<p><span class="hours">00</span></p>
+			<p><em class="textHours">Hours</em></p>
+		</li>
+		<li>
+			<p><span class="minutes">00</span></p>
+			<p><em class="textMinutes">Minutes</em></p>
+		</li>
+		<li>
+			<p><span class="seconds">00</span></p>
+			<p><em class="textSeconds">Seconds</em></p>
+		</li>
+	</ul>
+	<form style="clear: both; margin-top: 10px;">
+		<input class="pause1" type="button" name="pause" value="pause">
+		<input class="stop1" type="button" name="stop" value="stop">
+		<input class="start1" type="button" name="start" value="start">
+	</form>
+	<br>
+	
+	<h2>Custom-Duration Counter</h2>
+	<ul class="jCounterDefault countdown3">
+		<li>
+			<p><span class="seconds">00</span></p>
+			<p><em class="textSeconds">Seconds</em></p>
+		</li>
+	</ul>
+	<form style="clear: both; margin-top: 10px;">
+		<input class="pause3" type="button" name="pause" value="pause">
+		<input class="stop3" type="button" name="stop" value="stop">
+		<input class="reset3" type="button" name="reset" value="reset">
+		<input class="start3" type="button" name="start" value="start">
+	</form>
+	<br>
+	
+	<h2>Custom-Range Count Up</h2>
+	<ul class="jCounterDefault countdown2">
+		<li>
+			<p><span class="hours">00</span></p>
+			<p><em class="textHours">Hours</em></p>
+		</li>
+		<li>
+			<p><span class="minutes">00</span></p>
+			<p><em class="textMinutes">Minutes</em></p>
+		</li>
+		<li>
+			<p><span class="seconds">00</span></p>
+			<p><em class="textSeconds">Seconds</em></p>
+		</li>
+	</ul>
+	<form style="clear: both; margin-top: 10px;">
+		<input class="pause2" type="button" name="pause" value="pause">
+		<input class="stop2" type="button" name="stop" value="stop">
+		<input class="reset2" type="button" name="reset" value="reset">
+		<input class="start2" type="button" name="start" value="start">
+	</form>
+	<br>
+
+</body>
+</html>
