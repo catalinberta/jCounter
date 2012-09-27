@@ -1,0 +1,24 @@
+--------------------------------
+jCounter v0.1.0 (beta) - a jQuery plugin;
+Copyright (c) 2012 Catalin Berta. Licensed under the MIT license.
+--------------------------------
+
+About jCounter
+--------------
+
+jCounter is a light-weight jQuery plugin that helps easily create various types of counters on your website.
+
+Features:
+	- create date-based countdowns with real server-side timezone support;
+	- create countdowns with custom durations;
+	- not only countdowns, but it can also create countUps from custom values;
+	- supports multiple independent instances;
+	- various settings that help you personalize your counter and easily integrate it;
+	- native methods for a better control;
+	
+And... more!
+For a full list of features, demos and documentation, visit the official page:
+
+http://devingredients.com/jcounter/
+
+
