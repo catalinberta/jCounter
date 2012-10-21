@@ -3,9 +3,9 @@
 <head>
 	<title>jCounter - jQuery plugin - devingredients.com</title>
 	<meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1">
-	<link rel="stylesheet" type="text/css" href="css/countdown.css">
+	<link rel="stylesheet" type="text/css" href="css/jCounter.css">
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
-	<script type="text/javascript" src="js/jquery.jCounter-0.1.1.js"></script>
+	<script type="text/javascript" src="js/jquery.jCounter-0.1.2.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function() {
 			//first counter
@@ -74,68 +74,92 @@
 <body>
 	<h3>Visit the official page of <a href="http://devingredients.com/jcounter" title="">jCounter Plugin</a> for info and documentation</h3><br>
 	<h2>Date-based countdown</h2>
-	<ul class="jCounterDefault countdown1">
-		<li>
-			<p><span class="days">00</span></p>
-			<p><em class="textDays">Days</em></p>
-		</li>
-		<li>
-			<p><span class="hours">00</span></p>
-			<p><em class="textHours">Hours</em></p>
-		</li>
-		<li>
-			<p><span class="minutes">00</span></p>
-			<p><em class="textMinutes">Minutes</em></p>
-		</li>
-		<li>
-			<p><span class="seconds">00</span></p>
-			<p><em class="textSeconds">Seconds</em></p>
-		</li>
-	</ul>
-	<form style="clear: both; margin-top: 10px;">
-		<input class="pause1" type="button" name="pause" value="pause">
-		<input class="stop1" type="button" name="stop" value="stop">
-		<input class="start1" type="button" name="start" value="start">
-	</form>
-	<br>
+	<div class="dsb-theme-wrapper countdown1">
+		<div class="dsb-theme">
+			<div class="counter-wrapper">
+				<ul>
+					<li>
+						<p class="days">00</p>
+					</li>
+					<li>
+						<p class="hours">00</p>
+					</li>
+					<li>
+						<p class="minutes">00</p>
+					</li>
+					<li>
+						<p class="seconds">00</p>
+					</li>
+				</ul>
+				<div class="jC-clear"></div>
+			</div>
+			<p class="jCtext">
+				<span><em class="textDays">DAYS</em></span>
+				<span><em class="textHours">HOURS</em></span>
+				<span><em class="textMinutes">MINUTES</em></span>
+				<span><em class="textSeconds">SECONDS</em></span>
+			</p>
+			<div class="jC-clear"></div>
+		</div>
+	</div>
+	<p>
+		<a class="dsb-btn pause1" href="javascript:;" title="">PAUSE</a>
+		<a class="dsb-btn stop1" href="javascript:;" title="">STOP</a>
+		<a class="dsb-btn start1" href="javascript:;" title="">START</a>
+	</p>
 	
 	<h2>Custom-Duration Counter</h2>
-	<ul class="jCounterDefault countdown3">
-		<li>
-			<p><span class="seconds">00</span></p>
-			<p><em class="textSeconds">Seconds</em></p>
-		</li>
-	</ul>
-	<form style="clear: both; margin-top: 10px;">
-		<input class="pause3" type="button" name="pause" value="pause">
-		<input class="stop3" type="button" name="stop" value="stop">
-		<input class="reset3" type="button" name="reset" value="reset">
-		<input class="start3" type="button" name="start" value="start">
-	</form>
-	<br>
+	<div class="wsb-theme-wrapper countdown3">
+		<div class="wsb-theme">
+			<div class="counter-wrapper">
+				<ul>
+					<li>
+						<p class="seconds">00</p>
+					</li>
+				</ul>
+				<div class="jC-clear"></div>
+			</div>
+			<div class="jC-clear"></div>
+		</div>
+	</div>
+	<p>
+		<a class="wsb-btn pause3" href="javascript:;" title="">PAUSE</a>
+		<a class="wsb-btn stop3" href="javascript:;" title="">STOP</a>
+		<a class="wsb-btn reset3" href="javascript:;" title="">RESET</a>
+		<a class="wsb-btn start3" href="javascript:;" title="">START</a>
+	</p>
 	
 	<h2>Custom-Range Count Up</h2>
-	<ul class="jCounterDefault countdown2">
-		<li>
-			<p><span class="hours">00</span></p>
-			<p><em class="textHours">Hours</em></p>
-		</li>
-		<li>
-			<p><span class="minutes">00</span></p>
-			<p><em class="textMinutes">Minutes</em></p>
-		</li>
-		<li>
-			<p><span class="seconds">00</span></p>
-			<p><em class="textSeconds">Seconds</em></p>
-		</li>
-	</ul>
-	<form style="clear: both; margin-top: 10px;">
-		<input class="pause2" type="button" name="pause" value="pause">
-		<input class="stop2" type="button" name="stop" value="stop">
-		<input class="reset2" type="button" name="reset" value="reset">
-		<input class="start2" type="button" name="start" value="start">
-	</form>
-	<br>
+	<div class="dsb-theme-wrapper countdown2">
+		<div class="dsb-theme">
+			<div class="counter-wrapper">
+				<ul>
+					<li>
+						<p class="hours">00</p>
+					</li>
+					<li>
+						<p class="minutes">00</p>
+					</li>
+					<li>
+						<p class="seconds">00</p>
+					</li>
+				</ul>
+				<div class="jC-clear"></div>
+			</div>
+			<p class="jCtext">
+				<span><em class="textHours">HOURS</em></span>
+				<span><em class="textMinutes">MINUTES</em></span>
+				<span><em class="textSeconds">SECONDS</em></span>
+			</p>
+			<div class="jC-clear"></div>
+		</div>
+	</div>
+	<p>
+		<a class="dsb-btn pause2" href="javascript:;" title="">PAUSE</a>
+		<a class="dsb-btn stop2" href="javascript:;" title="">STOP</a>
+		<a class="dsb-btn reset2" href="javascript:;" title="">RESET</a>
+		<a class="dsb-btn start2" href="javascript:;" title="">START</a>
+	</p>
 
 </body>
 </html>

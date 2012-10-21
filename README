@@ -1,5 +1,5 @@
 --------------------------------
-jCounter v0.1.1 (beta) - a jQuery plugin;
+jCounter v0.1.2 (beta) - a jQuery plugin;
 Copyright (c) 2012 Catalin Berta. Licensed under the MIT license.
 --------------------------------
 
@@ -14,6 +14,7 @@ Features:
 	- not only countdowns, but it can also create countUps from custom values;
 	- supports multiple independent instances;
 	- various settings that help you personalize your counter and easily integrate it;
+	- beautiful pure-css scalable themes;
 	- native methods for a better control;
 	
 And... more!
