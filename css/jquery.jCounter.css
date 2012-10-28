@@ -1,0 +1,246 @@
+/***************************************************
+* Stylesheet: Part of the jCounter jQuery plugin
+* Official page: http://devingredients.com/jcounter
+* Author: Catalin Berta 
+* Licensed under the MIT license
+* NOTE: To resize the counter, you can do so by just changing the main font-size from .dsb-theme-wrapper (line 16);
+***************************************************/
+
+/* dark scoreboard theme */
+.dsb-theme * {
+	margin: 0;
+	padding: 0;
+}
+.dsb-theme-wrapper {
+	display: inline-block;
+	font: normal normal 40px helvetica-light, helvetica, arial, sans-serif !important; /* change font-size to resize counter */
+	zoom: 1;
+  	*display: inline;
+}
+.dsb-theme, .dsb-btn {
+	background-color: #576e81;
+	border: 0.02em solid #323f49;
+	padding: 0.3em;
+	text-align: center;
+	background: -moz-linear-gradient(top, #7e8a95 0%, #3d5c74 100%);
+	background: -ms-linear-gradient(top, #7e8a95 0%, #3d5c74 100%);
+	background: -o-linear-gradient(top, #7e8a95 0%, #3d5c74 100%);
+	background: -webkit-linear-gradient(top, #7e8a95 0%, #3d5c74 100%);
+	background: linear-gradient(top, #7e8a95 0%, #3d5c74 100%);
+	-moz-border-radius: 0.12em;
+	-ms-border-radius: 0.12em;
+	-o-border-radius: 0.12em;
+	-webkit-border-radius: 0.12em;
+	border-radius: 0.12em;
+	-moz-box-shadow: 0 0.03em 0.15em rgba(0,0,0,0.60), 0 0.03em 0.01em rgba(255,255,255,0.25) inset;
+	-ms-box-shadow: 0 0.03em 0.15em rgba(0,0,0,0.60), 0 0.03em 0.01em rgba(255,255,255,0.25) inset;
+	-o-box-shadow: 0 0.03em 0.15em rgba(0,0,0,0.60), 0 0.03em 0.01em rgba(255,255,255,0.25) inset;
+	-webkit-box-shadow: 0 0.03em 0.15em rgba(0,0,0,0.60), 0 0.03em 0.01em rgba(255,255,255,0.25) inset;
+	box-shadow: 0 0.03em 0.15em rgba(0,0,0,0.60), 0 0.03em 0.01em rgba(255,255,255,0.25) inset;
+}
+.dsb-theme .counter-wrapper {
+	background-color: #0e0e0e;
+	display: block;
+	padding: 0.1em 0.11em 0.1em 0;
+	background: -moz-linear-gradient(top, #111 0%, #333 100%);
+	background: -ms-linear-gradient(top, #111 0%, #333 100%);
+	background: -o-linear-gradient(top, #111 0%, #333 100%);
+	background: -webkit-linear-gradient(top, #111 0%, #333 100%);
+	background: linear-gradient(top, #111 0%, #333 100%);
+	-moz-border-radius: 0.08em;
+	-ms-border-radius: 0.08em;
+	-o-border-radius: 0.08em;
+	-webkit-border-radius: 0.08em;
+	border-radius: 0.08em;
+	-moz-box-shadow: 0 0.020em 0.005em rgba(255,255,255,0.15);
+	-ms-box-shadow: 0 0.020em 0.005em rgba(255,255,255,0.15);
+	-o-box-shadow: 0 0.020em 0.005em rgba(255,255,255,0.15);
+	-webkit-box-shadow: 0 0.020em 0.005em rgba(255,255,255,0.15);
+	box-shadow: 0 0.020em 0.005em rgba(255,255,255,0.15);
+}
+.dsb-theme ul li {
+	background-color: #fff;
+	color: #141e27;
+	float: left;
+	font-size: inherit !important;
+	list-style-type: none;
+	margin-left: 0.11em;
+	min-width: 1.12em;
+	padding: 0.15em 0.3em;
+	position: relative;
+	text-shadow: 0 0.02em 0 rgba(255,255,255,0.80);
+}
+.dsb-theme ul li:before, .dsb-theme ul li:after {
+	content: "";
+	display: block;
+	height: 50%;
+	width: 100%;
+}
+.dsb-theme ul li:before {
+	position: absolute;
+		top: 0;
+		left: 0;
+	background: -moz-linear-gradient(top, #fff 0%, #ced5da 95%, #b8bec4 100%);
+	background: -ms-linear-gradient(top, #fff 0%, #ced5da 95%, #b8bec4 100%);
+	background: -o-linear-gradient(top, #fff 0%, #ced5da 95%, #b8bec4 100%);
+	background: -webkit-linear-gradient(top, #fff 0%, #ced5da 95%, #b8bec4 100%);
+	background: linear-gradient(top, #fff 0%, #ced5da 95%, #b8bec4 100%);
+}
+.dsb-theme ul li:after {
+	background: -moz-linear-gradient(top, #fff 0%, #ced5da 100%);
+	background: -ms-linear-gradient(top, #fff 0%, #ced5da 100%);
+	background: -o-linear-gradient(top, #fff 0%, #ced5da 100%);
+	background: -webkit-linear-gradient(top, #fff 0%, #ced5da 100%);
+	background: linear-gradient(top, #fff 0%, #ced5da 100%);
+	position: absolute;
+		bottom: 0;
+		left: 0;
+}
+.dsb-theme ul li p {
+	font-size: inherit !important;
+	position: relative;
+	z-index: 1;
+}
+.dsb-theme .jCtext, .dsb-btn {
+	color: rgba(0,0,0,0.5);
+	font-size: inherit !important;
+	margin: 0.1em 0;
+	text-decoration: none;
+	text-shadow: 0 0.02em 0 rgba(255,255,255,0.1);
+}
+.dsb-theme .jCtext span {
+	display: block;
+	float: left;
+	font-size: inherit !important;
+	line-height: 0.01em;
+	margin-left: 0.1em;
+	min-width: 1.73em;
+}
+.dsb-theme .jCtext span em {
+	font: normal bold 0.25em arial !important;
+}
+.dsb-theme .jC-clear {
+	clear: both;
+}
+.dsb-btn {
+	text-shadow: 0 0.05em 0 rgba(255,255,255,0.1);
+}
+
+
+/* white scoreboard theme */
+.wsb-theme * {
+	margin: 0;
+	padding: 0;
+}
+.wsb-theme-wrapper {
+	display: inline-block;
+	font: normal normal 40px helvetica-light, helvetica, arial, sans-serif !important; /* change font-size to resize counter */
+	zoom: 1;
+  	*display: inline;
+}
+.wsb-theme, .wsb-btn {
+	background-color: #e0e6eb;
+	border: 0.02em solid #d6dbdf;
+	padding: 0.3em;
+	text-align: center;
+	background: -moz-linear-gradient(top, #f6f7f7 0%, #dfe5ea 100%);
+	background: -ms-linear-gradient(top, #f6f7f7 0%, #dfe5ea 100%);
+	background: -o-linear-gradient(top, #f6f7f7 0%, #dfe5ea 100%);
+	background: -webkit-linear-gradient(top, #f6f7f7 0%, #dfe5ea 100%);
+	background: linear-gradient(top, #f6f7f7 0%, #dfe5ea 100%);
+	-moz-border-radius: 0.12em;
+	-ms-border-radius: 0.12em;
+	-o-border-radius: 0.12em;
+	-webkit-border-radius: 0.12em;
+	border-radius: 0.12em;
+	-moz-box-shadow: 0 0.04em 0.10em rgba(0,0,0,0.40), 0 0.03em 0.01em rgba(255,255,255,0.25) inset;
+	-ms-box-shadow: 0 0.04em 0.10em rgba(0,0,0,0.40), 0 0.03em 0.01em rgba(255,255,255,0.25) inset;
+	-o-box-shadow: 0 0.04em 0.10em rgba(0,0,0,0.40), 0 0.03em 0.01em rgba(255,255,255,0.25) inset;
+	-webkit-box-shadow: 0 0.04em 0.10em rgba(0,0,0,0.40), 0 0.03em 0.01em rgba(255,255,255,0.25) inset;
+	box-shadow: 0 0.04em 0.10em rgba(0,0,0,0.40), 0 0.03em 0.01em rgba(255,255,255,0.25) inset;
+}
+.wsb-theme .counter-wrapper {
+	background-color: #8c9aa1;
+	border: 0.02em solid #aab6ba;
+	display: block;
+	padding: 0.1em 0.11em 0.1em 0;
+	background: -moz-linear-gradient(top, #c8d2d5 0%, #a5b4b9 100%);
+	background: -ms-linear-gradient(top, #c8d2d5 0%, #a5b4b9 100%);
+	background: -o-linear-gradient(top, #c8d2d5 0%, #a5b4b9 100%);
+	background: -webkit-linear-gradient(top, #c8d2d5 0%, #a5b4b9 100%);
+	background: linear-gradient(top, #c8d2d5 0%, #a5b4b9 100%);
+	-moz-border-radius: 0.08em;
+	-ms-border-radius: 0.08em;
+	-o-border-radius: 0.08em;
+	-webkit-border-radius: 0.08em;
+	border-radius: 0.08em;
+	-moz-box-shadow: 0 0.020em 0.005em rgba(255,255,255,0.15);
+	-ms-box-shadow: 0 0.020em 0.005em rgba(255,255,255,0.15);
+	-o-box-shadow: 0 0.020em 0.005em rgba(255,255,255,0.15);
+	-webkit-box-shadow: 0 0.020em 0.005em rgba(255,255,255,0.15);
+	box-shadow: 0 0.020em 0.005em rgba(255,255,255,0.15);
+}
+.wsb-theme ul li {
+	background-color: #fff;
+	color: #6f7376;
+	float: left;
+	list-style-type: none;
+	margin-left: 0.11em;
+	min-width: 1.12em;
+	padding: 0.15em 0.3em;
+	position: relative;
+	box-shadow: 0 0 0.01em 0.02em rgba(0,0,0,0.05);
+	text-shadow: 0 0.02em 0 rgba(255,255,255,0.80);
+}
+.wsb-theme ul li:before, .wsb-theme ul li:after {
+	content: "";
+	display: block;
+	height: 50%;
+	width: 100%;
+}
+.wsb-theme ul li:before {
+	position: absolute;
+		top: 0;
+		left: 0;
+	background: -moz-linear-gradient(top, #fff 0%, #ced5da 95%, #b8bec4 100%);
+	background: -ms-linear-gradient(top, #fff 0%, #ced5da 95%, #b8bec4 100%);
+	background: -o-linear-gradient(top, #fff 0%, #ced5da 95%, #b8bec4 100%);
+	background: -webkit-linear-gradient(top, #fff 0%, #ced5da 95%, #b8bec4 100%);
+	background: linear-gradient(top, #fff 0%, #ced5da 95%, #b8bec4 100%);
+}
+.wsb-theme ul li:after {
+	background: -moz-linear-gradient(top, #fff 0%, #ced5da 100%);
+	background: -ms-linear-gradient(top, #fff 0%, #ced5da 100%);
+	background: -o-linear-gradient(top, #fff 0%, #ced5da 100%);
+	background: -webkit-linear-gradient(top, #fff 0%, #ced5da 100%);
+	background: linear-gradient(top, #fff 0%, #ced5da 100%);
+	position: absolute;
+		bottom: 0;
+		left: 0;
+}
+.wsb-theme ul li p {
+	font-size: inherit !important;
+	position: relative;
+	z-index: 1;
+}
+.wsb-theme .jCtext, .wsb-btn {
+	color: rgba(0,0,0,0.5);
+	font-size: inherit !important;
+	margin: 0.1em 0;
+	text-decoration: none;
+	text-shadow: 0 0.03em 0 rgba(255,255,255,1);
+}
+.wsb-theme .jCtext span {
+	display: block;
+	float: left;
+	line-height: 0.01em;
+	margin-left: 0.1em;
+	min-width: 1.73em;
+}
+.wsb-theme .jCtext span em {
+	font: normal normal 0.25em arial !important;
+}
+.wsb-theme .jC-clear {
+	clear: both;
+}
+

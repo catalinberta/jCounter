@@ -1,0 +1,172 @@
+/***************************************************
+* Stylesheet: Part of the jCounter jQuery plugin
+* Official page: http://devingredients.com/jcounter
+* Author: Catalin Berta 
+* Licensed under the MIT license
+* NOTE: To resize the counter, you can do so by just changing the main font-size from .dsb-theme-wrapper (line 16);
+***************************************************/
+
+/* iOS Dark theme */
+.iosd-theme * {
+	margin: 0;
+	padding: 0;
+}
+.iosd-theme-wrapper {
+	display: inline-block;
+	font: normal normal 40px helvetica-light, helvetica, arial, sans-serif !important; /* change font-size to resize counter */
+	zoom: 1;
+  	*display: inline;
+}
+.iosd-theme, .iosd-btn {
+	background-color: #576e81;
+	border: 0.02em solid #616b74;
+	padding: 0.4em 0.3em;
+	text-align: center;
+	background: -moz-linear-gradient(top, #7f8a94 0%, #2f475a 100%);
+	background: -ms-linear-gradient(top, #7f8a94 0%, #2f475a 100%);
+	background: -o-linear-gradient(top, #7f8a94 0%, #2f475a 100%);
+	background: -webkit-linear-gradient(top, #7f8a94 0%, #2f475a 100%);
+	background: linear-gradient(top, #7f8a94 0%, #2f475a 100%);
+	-moz-border-radius: 0.12em;
+	-ms-border-radius: 0.12em;
+	-o-border-radius: 0.12em;
+	-webkit-border-radius: 0.12em;
+	border-radius: 0.12em;
+	-moz-box-shadow: 0 0.03em 0.15em rgba(0,0,0,0.60), 0 0.03em 0.01em rgba(255,255,255,0.25) inset;
+	-ms-box-shadow: 0 0.03em 0.15em rgba(0,0,0,0.60), 0 0.03em 0.01em rgba(255,255,255,0.25) inset;
+	-o-box-shadow: 0 0.03em 0.15em rgba(0,0,0,0.60), 0 0.03em 0.01em rgba(255,255,255,0.25) inset;
+	-webkit-box-shadow: 0 0.03em 0.15em rgba(0,0,0,0.60), 0 0.03em 0.01em rgba(255,255,255,0.25) inset;
+	box-shadow: 0 0.03em 0.15em rgba(0,0,0,0.60), 0 0.03em 0.01em rgba(255,255,255,0.25) inset;
+}
+.iosd-theme ul li {
+	color: #141e27;
+	float: left;
+	font-size: inherit !important;
+	height: 1.3em;
+	list-style-type: none;
+	margin: 0 0.12em;
+	min-width: 1.42em;
+	padding-right: 0.02em;
+	background: -moz-linear-gradient(top, #909aa2 0%, #31363a 100%);
+	background: -ms-linear-gradient(top, #909aa2 0%, #31363a 100%);
+	background: -o-linear-gradient(top, #909aa2 0%, #31363a 100%);
+	background: -webkit-linear-gradient(top, #909aa2 0%, #31363a 100%);
+	background: linear-gradient(top, #909aa2 0%, #31363a 100%);
+	-moz-border-radius: 0.04em;
+	-ms-border-radius: 0.04em;
+	-o-border-radius: 0.04em;
+	-webkit-border-radius: 0.04em;
+	border-radius: 0.04em;
+	-moz-box-shadow: 0 0.02em 0 rgba(255,255,255,0.10);
+	-ms-box-shadow: 0 0.02em 0 rgba(255,255,255,0.10);
+	-o-box-shadow: 0 0.02em 0 rgba(255,255,255,0.10);
+	-webkit-box-shadow: 0 0.02em 0 rgba(255,255,255,0.10);
+	box-shadow: 0 0.02em 0 rgba(255,255,255,0.10);
+}
+
+.iosd-theme ul li p {
+	float: left;
+	font-size: inherit !important;
+	height: 1.26em;
+	margin: 0.02em 0 0 0.02em;
+	padding-right: 0.02em;
+	position: relative;
+	min-width: 1.38em;
+	background: -moz-linear-gradient(top, #6f7376 0%, #2a3843 99%);
+	background: -ms-linear-gradient(top, #6f7376 0%, #2a3843 99%);
+	background: -o-linear-gradient(top, #6f7376 0%, #2a3843 99%);
+	background: -webkit-linear-gradient(top, #6f7376 0%, #2a3843 99%);
+	background: linear-gradient(top, #6f7376 0%, #2a3843 99%);
+	-moz-border-radius: 0.02em;
+	-ms-border-radius: 0.02em;
+	-o-border-radius: 0.02em;
+	-webkit-border-radius: 0.02em;
+	border-radius: 0.02em;
+	text-shadow: 0 0.02em 0 rgba(255,255,255,0.80);
+}
+
+.iosd-theme ul li p span {
+	display: block;
+	float: left;
+	font-size: inherit !important;
+	height: 1.24em;
+	margin: 0.02em 0 0 0.02em;
+	min-width: 1.34em;
+	padding-right: 0.02em;
+	background: -moz-linear-gradient(top, #314045 0%, #fff 50%, #314045 100%);
+	background: -ms-linear-gradient(top, #314045 0%, #fff 50%, #314045 100%);
+	background: -o-linear-gradient(top, #314045 0%, #fff 50%, #314045 100%);
+	background: -webkit-linear-gradient(top, #314045 0%, #fff 50%, #314045 100%);
+	background: linear-gradient(top, #314045 0%, #fff 50%, #314045 100%);
+}
+
+.iosd-theme ul li p span em {
+	display: block;
+	font-size: inherit !important;
+	font-style: inherit;
+	float: left;
+	height: 1.24em;
+	margin: 0 0 0 0.02em;
+	min-width: 1.32em;
+	overflow: hidden;
+	position: relative;
+	background: -moz-linear-gradient(top, #5c6c72 0%, #fff 50%, #5c6c72 100%);
+	background: -ms-linear-gradient(top, #5c6c72 0%, #fff 50%, #5c6c72 100%);
+	background: -o-linear-gradient(top, #5c6c72 0%, #fff 50%, #5c6c72 100%);
+	background: -webkit-linear-gradient(top, #5c6c72 0%, #fff 50%, #5c6c72 100%);
+	background: linear-gradient(top, #5c6c72 0%, #fff 50%, #5c6c72 100%);
+}
+.iosd-theme ul li p span em b, .iosd-theme ul li p span em i {
+	display: block;
+	font-size: inherit !important;
+	font-weight: inherit;
+	height: 1.22em;
+	margin: 0.02em auto 0;
+	min-width: 1.12em;
+	padding: 0 0.13em;
+	z-index: 1;
+}
+.iosd-theme ul li p span em b {
+	visibility: hidden;
+}
+.iosd-theme ul li p span em i {
+	font-style: normal;
+	height: auto !important;
+	position: absolute;
+		top: -1.24em;
+		left: 0;
+}
+.iosd-theme ul li p span em i u {
+	display: block;
+	font-size: inherit !important;
+	height: 1.24em;
+	min-width: 1.12em;
+	text-decoration: none;
+}
+
+.iosd-theme .jCtext, .iosd-btn {
+	color: rgba(0,0,0,0.5);
+	font-size: inherit !important;
+	position: relative;
+		top: 0.05em;
+	text-decoration: none;
+	text-shadow: 0 0.02em 0 rgba(255,255,255,0.1);
+}
+.iosd-theme .jCtext span {
+	display: block;
+	float: right;
+	font-size: inherit !important;
+	line-height: 0.01em;
+	margin: 0 0.12em;
+	min-width: 1.5em;
+}
+.iosd-theme .jCtext span em {
+	font: normal bold 0.25em arial !important;
+}
+
+.iosd-theme .jC-clear {
+	clear: both;
+}
+.iosd-btn {
+	text-shadow: 0 0.05em 0 rgba(255,255,255,0.1);
+}
