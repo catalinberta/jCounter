@@ -1,6 +1,7 @@
 /**********************************
 * jCounter Script v0.1.1 (beta)
 * Author: Catalin Berta
+* E-mail: catalinberta (at) gmail (dot) com
 * Official page and documentation: http://devingredients.com/jcounter
 * Licensed under the MIT license: http://opensource.org/licenses/MIT
 **********************************/
@@ -82,7 +83,7 @@
 				});
 			}
 		}
-		
+
 		//checks whether this jCounter instance runs by a customDuration setting
 		if(thisEl.data("userOptions").customDuration) {
 			if(!isNaN(thisEl.data("userOptions").customDuration)) {
@@ -92,9 +93,9 @@
 				if(consoleLog) { console.log("(jC) Error: The customDuration value is not a number! NOTE: 'customDuration' accepts a number of seconds."); }
 			}
 		}
-		
+
 		//checks whether this jCounter instance runs by a customRange setting
-		if(thisEl.data("userOptions").customRange) {	
+		if(thisEl.data("userOptions").customRange) {
 			var customRangeValues = thisEl.data("userOptions").customRange.split(":");
 			var rangeVal0 = parseInt(customRangeValues[0]);
 			var rangeVal1 = parseInt(customRangeValues[1]);
@@ -112,7 +113,7 @@
 		}
 
 		//FUNCTIONS
-		
+
 		//jCounter initializer
 		function startCounter(el) {
 			if(customDuration) {
@@ -129,7 +130,7 @@
 					if(endCounter == false) {
 						currentTime = parseInt(currentTime) + 1;
 						countdown_proc(currentTime,el)
-					}				
+					}
 				},1000));
 			} else if(customRange) {
 				eventDate = Math.round(customRangeValues[1]);
@@ -149,7 +150,7 @@
 							currentTime = parseInt(currentTime) + 1;
 						}
 						countdown_proc(currentTime,el);
-					}				
+					}
 				},1000));
 			} else {
 				eventDate = Date.parse($(el).data("userOptions").date) / 1000;
@@ -160,7 +161,7 @@
 				} else {
 					if(consoleLog) { console.log("(jC) Error: dateSource property can be set to 'local' or 'remote', 'remote' is default"); }
 				}
-			
+
 				$.getJSON(dateSource,function(data){
 					var currentDate = Date.parse(data.currentDate) / 1000;
 					countdown_proc(currentDate,el);
@@ -169,14 +170,14 @@
 							if(endCounter == false) {
 								currentDate = parseInt(currentDate) + 1;
 								countdown_proc(currentDate,el)
-							}				
+							}
 						},1000));
 					} else {
 						resetHTMLCounter(el)
 					}
-				}); 
+				});
 			}
-			
+
 		}
 
 		//main jCounter processor
@@ -188,7 +189,7 @@
 					if(thisEl.data("userOptions").fallback) {
 						thisEl.data("userOptions").fallback.call(this);
 					}
-					
+
 				}
 			} else {
 				if(eventDate <= duration) {
@@ -196,15 +197,15 @@
 					if(thisEl.data("userOptions").fallback) {
 						thisEl.data("userOptions").fallback.call(this);
 					}
-					
+
 				}
 			}
-			
+
 			//if customRange is used, update the seconds variable
 			var seconds = (customRange) ? duration : eventDate - duration;
 
 			var thisInstanceFormat = thisEl.data("userOptions").format;
-			
+
 			//calculate seconds into days,hours,minutes,seconds
 			//if dd (days) is specified in the format setting (i.e. format: 'dd:hh:mm:ss')
 			if(thisInstanceFormat.indexOf('dd') != -1)  {
@@ -232,7 +233,7 @@
 			if (hours == 1) { $(el).find(".textHours").text(singularLabels[1]); } else { $(el).find(".textHours").text(pluralLabels[1]); }
 			if (minutes == 1) { $(el).find(".textMinutes").text(singularLabels[2]); } else { $(el).find(".textMinutes").text(pluralLabels[2]); }
 			if (seconds == 1) { $(el).find(".textSeconds").text(singularLabels[3]); } else { $(el).find(".textSeconds").text(pluralLabels[3]); }
-			
+
 			//twoDigits ON setting
 			//if the twoDigits setting is set to ON, jCounter will always diplay a minimum number of 2 digits
 			if(thisEl.data("userOptions").twoDigits == 'on') {
@@ -248,14 +249,14 @@
 				$(el).find(".hours").text(hours);
 				$(el).find(".minutes").text(minutes);
 				$(el).find(".seconds").text(seconds);
-			} else { 
+			} else {
 				if(consoleLog) { console.log("(jC) Error: Invalid date! Here's an example: 01 January 1970 12:00:00"); }
 				clearInterval($(el).data("jC_interval"));
 			}
 			//stores the remaining time when pausing jCounter
 			$(el).data("jC_pausedTime", eventDate-duration);
 		}
-		
+
 		//updates jCounter's HTML values to 0 or 00, based on the twoDigits setting
 		function resetHTMLCounter(el) {
 			if(thisEl.data("userOptions").twoDigits == 'on') {
@@ -264,7 +265,7 @@
 				$(el).find(".days,.hours,.minutes,.seconds").text('0');
 			}
 		}
-		
+
 		//method calling logic
 		if ( jC_methods[this.options] ) {
 			return jC_methods[ this.options ].apply( this, Array.prototype.slice.call( arguments, 1 ));
@@ -272,7 +273,7 @@
 			return jC_methods.init.apply( this, arguments );
 		} else {
 			console.log('(jC) Error: Method >>> ' +  this.options + ' <<< does not exist.' );
-		} 
+		}
 
 	}
 	//the end;
